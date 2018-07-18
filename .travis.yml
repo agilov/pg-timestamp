@@ -17,7 +17,6 @@ branches:
 
 install:
   - travis_retry composer install --no-interaction
-  - travis_retry composer install --no-interaction
 
 before_script:
   - sh tests/init-db.sh
