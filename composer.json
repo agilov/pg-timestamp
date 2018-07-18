@@ -1,0 +1,23 @@
+{
+  "name": "agilov/pg-timestamp",
+  "description": "PostgreSQL function that write timestamp to row on UPDATE or INSERT",
+  "keywords": [
+    "postgresql",
+    "timestamp behavior",
+    "timestamp"
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/agilov/pg-timestamp/issues",
+    "source": "https://github.com/agilov/pg-timestamp"
+  },
+  "authors": [
+    {
+      "name": "Roman Agilov",
+      "email": "agilovr@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": ">=6.3"
+  }
+}

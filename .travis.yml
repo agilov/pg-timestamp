@@ -1,0 +1,26 @@
+language: php
+
+sudo: false
+
+php:
+  - 7.1
+
+addons:
+    postgresql: "9.6"
+
+services:
+    - postgresql: "9.6"
+
+branches:
+    only:
+        - master
+
+install:
+  - travis_retry composer install --no-interaction
+  - travis_retry composer install --no-interaction
+
+before_script:
+  - sh tests/init-db.sh
+
+script:
+  - vendor/bin/phpunit tests
